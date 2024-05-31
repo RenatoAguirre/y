@@ -6,7 +6,6 @@
       <p class="card-text"><%= post.content.truncate 50 %></p>
       <p class="card-text">Comments: <%= post.comments.count %></p>
       <%= link_to 'View', post, class: 'card-link btn btn-primary' %>
-      <%= link_to 'Edit', edit_post_path(post), class: 'card-link btn btn-warning' %>
     </div>
   </div>
 </div>
