@@ -9,9 +9,9 @@ Post.delete_all
 User.delete_all
 Tag.delete_all
 
-ex = User.create name: 'Example', email: 'example@example.com', password: 'password'
-jm = User.create name: 'John McEnrow', email: 'jmcenrow@example.com', password: 'password'
-pg = User.create name: 'Peter Gabriel', email: 'pgabriel@example.com', password: 'password'
+ex = User.create name: 'Example', email: 'example@example.com', password: 'password', password_confirmation: 'password'
+jm = User.create name: 'John McEnrow', email: 'jmcenrow@example.com', password: 'password', password_confirmation: 'password'
+pg = User.create name: 'Peter Gabriel', email: 'pgabriel@example.com', password: 'password', password_confirmation: 'password'
 
 t1 = Tag.create name: 'compsci'
 t2 = Tag.create name: 'study'
