@@ -11,7 +11,7 @@
 
   <div class="form-group mb-3">
     <%= form.label :user_id %>
-    <%= form.collection_select :user_id, User.all, :id, :name, {prompt: "Select an author"}, {class: "form-control"} %>
+    <%= form.collection_select :user_id, User.all, :id, :email, {prompt: "Select an author"}, {class: "form-control"} %>
   </div>
 
   <%= form.submit "Submit", class: "btn btn-primary" %>
